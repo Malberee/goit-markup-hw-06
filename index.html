@@ -456,10 +456,10 @@
 					</div>
 					<div class="footer-forms">
 						<h3 class="footer-forms-title">Підпишіться на розсилку</h3>
-						<form action="" class="footer-form">
+						<form action="#" class="footer-form">
 							<input
+								name="mail"
 								type="email"
-								name="footer-mail-form"
 								placeholder="E-mail"
 								class="email-input"
 							/>
@@ -481,24 +481,34 @@
 						</svg>
 					</button>
 					<h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-					<form action="" class="modal-forms">
+					<form action="#" class="modal-forms">
 						<div class="form-field">
 							<label for="modal-name" class="form-label"> Ім'я </label>
-							<input type="text" class="modal-form" id="modal-name" />
+							<input
+								name="name"
+								type="text"
+								class="modal-form"
+								id="modal-name"
+							/>
 							<svg class="modal-form-icon">
 								<use href="./images/icons.svg#icon-person"></use>
 							</svg>
 						</div>
 						<div class="form-field">
 							<label for="modal-tel" class="form-label"> Телефон </label>
-							<input type="tel" class="modal-form" id="modal-tel" />
+							<input name="tel" type="tel" class="modal-form" id="modal-tel" />
 							<svg class="modal-form-icon">
 								<use href="./images/icons.svg#icon-phone"></use>
 							</svg>
 						</div>
 						<div class="form-field">
 							<label for="modal-mail" class="form-label"> Пошта </label>
-							<input type="email" class="modal-form" id="modal-mail" />
+							<input
+								name="email"
+								type="email"
+								class="modal-form"
+								id="modal-mail"
+							/>
 							<svg class="modal-form-icon">
 								<use href="./images/icons.svg#icon-email"></use>
 							</svg>
@@ -506,7 +516,7 @@
 						<div class="form-field">
 							<label for="modal-comment" class="form-label"> Коментар </label>
 							<textarea
-								name=""
+								name="comment"
 								id="modal-comment"
 								cols="30"
 								rows="10"
@@ -517,12 +527,13 @@
 						<div class="form-field-checkbox">
 							<label class="checkbox-label">
 								<input
+									name="license-checkbox"
 									type="checkbox"
 									id="modal-checkbox"
 									class="modal-checkbox"
 								/>
 								<span class="custom-checkbox"></span>
-								Погоджуюся з розсилкою та приймаю&nbsp
+								Погоджуюся з розсилкою та приймаю&nbsp;
 								<a href="" class="modal-link">Умови договору</a>
 							</label>
 						</div>
